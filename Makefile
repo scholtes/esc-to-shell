@@ -11,6 +11,8 @@ CFLAGS=-m32 -g -fno-stack-protector
 
 default:
 	$(CC) $(CFLAGS) -o lab3ex lab3ex.c
+	echo "Secret file!" > root-only-file
+	chmod 600 root-only-file
 
 clean:
-	rm -f lab3ex
+	rm -f lab3ex root-only-file

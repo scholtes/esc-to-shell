@@ -1,3 +1,6 @@
+# Other files
+root-only-file
+
 # Object files
 *.o
 *.ko
