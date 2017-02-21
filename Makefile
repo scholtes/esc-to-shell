@@ -9,9 +9,9 @@
 CC=gcc
 CFLAGS=-m32 -g -fno-stack-protector
 
-default:
+default: clean
 	$(CC) $(CFLAGS) -o lab3ex lab3ex.c
-	echo "Secret file!" > root-only-file
+	sudo echo "Secret file!" > root-only-file
 	sudo chown root:root root-only-file
 	sudo chmod 600 root-only-file
 
