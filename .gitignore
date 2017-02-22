@@ -30,7 +30,6 @@ root-only-file
 *.i*86
 *.x86_64
 *.hex
-lab3ex
 
 # Debug files
 *.dSYM/
